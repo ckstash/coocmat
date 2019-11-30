@@ -11,8 +11,10 @@ install.packages("devtools", dependencies = TRUE)
 #### 2. Load devtools
 library(devtools)
 
-#### 3. Install coocmat from this github repository
+#### 3. Install coocmat from this github repository and dependencies
 install_github("ckstash/coocmat")
+install.packages("magrittr", dependencies = TRUE)
+install.packages("dplyr", dependencies = TRUE)
 
 ### Example usage
 
