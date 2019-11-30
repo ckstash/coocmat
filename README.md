@@ -6,7 +6,7 @@ Given a document-topic matrix, the function returns a topic cooccurrence matrix 
 
 ### Installation Steps
 #### 1. You need to have devtools installed
-install.packages("devtools")
+install.packages("devtools", dependencies = TRUE)
 
 #### 2. Load devtools
 library(devtools)
