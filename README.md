@@ -4,14 +4,14 @@ R package for deriving a topic cooccurrence matrix from document-topic matrix
 ### Description
 Given a document-topic matrix, the function returns a topic cooccurrence matrix (also called an adjacency matrix).
 
-### Installation
-#### You need to have devtools installed
+### Installation Steps
+#### 1. You need to have devtools installed
 install.packages("devtools")
 
-#### Load devtools
+#### 2. Load devtools
 library(devtools)
 
-#### Install coocmat from this github repository
+#### 3. Install coocmat from this github repository
 install_github("ckstash/coocmat")
 
 ### Example usage
