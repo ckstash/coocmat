@@ -1,10 +1,13 @@
-library(magrittr)
-library(dplyr)
-
-#given a document-topic matrix (rows are documents)
-#returns a topic cooccurrence matrix
+#####
+# Given a document-topic matrix (rows are documents)
+# returns a topic cooccurrence matrix
+#####
 
 get_cooccurrence_matrix <- function(df) {
+  #load libraries
+  library(magrittr)
+  library(dplyr)
+  
   #get row and col indicies of non-zero elems as dataframe
   #col names are "row" and "col"
   df_nz <- as.data.frame(which(df != 0, arr.ind = T))
