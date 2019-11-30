@@ -1,6 +1,6 @@
 Package: coocmat
 Type: Package
-Title: Get a Topic Cooccurrence Matrix
+Title: Deriving Topic Cooccurrence Matrices
 Version: 0.1.0
 Author: Chinmay Kakatkar
 Maintainer: Chinmay Kakatkar <conceptual.frameworks@gmail.com>
