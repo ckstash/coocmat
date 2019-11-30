@@ -28,10 +28,15 @@ df <- data.frame(t(matrix(c(c(1,0,0,1,0,1),
 
 #derive topic cooccurrence matrix
 cooccurrence_matrix <- get_cooccurrence_matrix(df)
+print(cooccurrence_matrix)
+
+#duplicate values along diagonal (may come in handy for some use cases)
+cooccurrence_matrix_d <- cooccurrence_matrix + t(cooccurrence_matrix)
+print(cooccurrence_matrix_d)
 
 #get list of topics
 names(cooccurrence_matrix)
 
-#print how many times topic "2" cooccurred with topic "3"
+#find out how many times topic "2" cooccurred with topic "3"
 print(cooccurrence_matrix["2","3"])
 ```
