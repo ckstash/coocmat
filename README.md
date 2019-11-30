@@ -6,15 +6,21 @@ Given a document-topic matrix, the function returns a topic cooccurrence matrix 
 
 ### Installation Steps
 #### 1. You need to have devtools installed
+```R
 install.packages("devtools", dependencies = TRUE)
+```
 
 #### 2. Load devtools
+```R
 library(devtools)
+```
 
 #### 3. Install coocmat from this github repository and dependencies
+```R
 install_github("ckstash/coocmat")
 install.packages("magrittr", dependencies = TRUE)
 install.packages("dplyr", dependencies = TRUE)
+```
 
 ### Example usage
 
