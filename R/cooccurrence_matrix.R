@@ -32,7 +32,7 @@ get_cooccurrence_matrix <- function(df) {
 
   # List of non-NULL combo dfs
   df_comb_list <- df_comb_list[lengths(df_comb_list) != 0]
-  #single df of combos
+  # Single df of combos
   df_combs <- as.data.frame(do.call(rbind, df_comb_list))
 
   # Initialize coocurrence matrix
@@ -42,8 +42,8 @@ get_cooccurrence_matrix <- function(df) {
 
   # Fill matrix
   for (i in seq(nrow(df_combs))) {
-    rn <- toString(df_combs[i, 1]) #row name
-    cn <- toString(df_combs[i, 2]) #col name
+    rn <- toString(df_combs[i, 1])  # Row name
+    cn <- toString(df_combs[i, 2])  # Column name
     cooccurrence_matrix[rn, cn] <- cooccurrence_matrix[rn, cn] + 1
   }
 
