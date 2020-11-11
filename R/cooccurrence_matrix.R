@@ -8,7 +8,7 @@ get_cooccurrence_matrix <- function(df) {
   library(magrittr)
   library(dplyr)
   
-  # Get row and column indicies of non-zero elems as dataframe
+  # Get row and column indices of non-zero elements as a dataframe
   # Column names are "row" and "col"
   df_nz <- as.data.frame(which(df != 0, arr.ind = T))
 
